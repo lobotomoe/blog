@@ -6,11 +6,20 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, PageProps } from "gatsby"
 
-const Seo = ({ description, lang, meta, title }) => {
+type SeoProps = {
+  description?: string,
+  lang?: string,
+  title: string,
+  meta?: {
+    name: string,
+    content: string
+  }[],
+}
+
+const Seo: React.FC<SeoProps> = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,9 +27,6 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            social {
-              twitter
-            }
           }
         }
       }
@@ -36,7 +42,7 @@ const Seo = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
@@ -58,10 +64,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:card`,
           content: `summary`,
         },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
-        },
+        // {
+        //   name: `twitter:creator`,
+        //   content: site.siteMetadata?.social?.twitter || ``,
+        // },
         {
           name: `twitter:title`,
           content: title,
@@ -70,22 +76,15 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(meta ?? [])}
     />
   )
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `ru`,
   meta: [],
   description: ``,
-}
-
-Seo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default Seo

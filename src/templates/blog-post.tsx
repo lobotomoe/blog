@@ -1,11 +1,45 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, PageProps } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogPostTemplate = ({ data, location }) => {
+type DataProps = {
+  previous: {
+    fields: {
+      slug: string;
+    }
+    frontmatter: {
+      title: string;
+    }
+  }
+  next: {
+     fields: {
+      slug: string;
+    },
+    frontmatter: {
+      title: string
+    }
+  },
+  site: {
+      siteMetadata: {
+        title: string;
+      },
+  },
+  markdownRemark: {
+    excerpt: string;
+    html: string;
+    frontmatter: {
+      description: string;
+      title: string;
+      date: string;
+    }
+  }
+}
+
+
+const BlogPostTemplate: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data

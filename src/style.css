@@ -291,6 +291,9 @@ a:focus {
   margin-bottom: var(--spacing-16);
 }
 
+.bio_description {
+}
+
 .bio p {
   margin-bottom: var(--spacing-0);
 }
