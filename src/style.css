@@ -54,12 +54,13 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
+  --color-primary: #69c8b6;
+  --color-text: #f3f3f3;
+  --color-text-light: #ababab;
+  --color-heading: #d1d1d1;
+  --color-heading-white: rgb(255, 255, 255);
   --color-accent: #d1dce5;
+  --bg-color: #1e1e1e;
 }
 
 /* HTML elements */
@@ -81,6 +82,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--bg-color);
 }
 
 footer {
@@ -120,7 +122,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--color-heading-white);
 }
 
 h2 {
@@ -333,4 +335,67 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.interactive-gif {
+}
+
+/* Responsive flicker-less display */
+.interactive-gif .embedded {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.interactive-gif .loading,
+.interactive-gif .still-container,
+.interactive-gif .gif-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.interactive-gif .still,
+.interactive-gif .gif {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Loading indicator */
+.interactive-gif .loading .indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  filter: contrast(0.5);
+}
+
+/* Play button */
+.interactive-gif .still-container .play {
+  cursor: pointer;
+  filter: grayscale(100%);
+  width: 20%;
+  position: absolute;
+  opacity: 0.9;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Text underneath the gif */
+.interactive-gif .caption {
+  font-size: 90%;
+  font-style: italic;
+}
+
+/* Image displayed when the gif cannot be found */
+.interactive-gif .placeholder {
+  filter: grayscale(100%);
+  text-align: center;
+}
+
+.interactive-gif .placeholder img {
+  width: 200px;
 }

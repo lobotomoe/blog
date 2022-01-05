@@ -18,6 +18,9 @@ const Bio: React.FC = () => {
             name
             summary
           }
+          social {
+            twitter
+          }
         }
       }
     }
@@ -25,6 +28,7 @@ const Bio: React.FC = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
+   const social = data.site.siteMetadata?.social
 
   return (
     <div className="bio">
@@ -45,7 +49,10 @@ const Bio: React.FC = () => {
               </p>
               <p>
                   {author?.summary || null}
-              </p>
+          </p>
+          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+            Follow me in Twitter
+          </a>
             </>
           )}
       </div>
