@@ -59,7 +59,23 @@ What about unsafe and dangerous events?
 In most cases, attempts to solve really important problems cause conflict with the authorities, corporations, police or criminals.
 We need to continue our attempts and find solution for unsafe initiatives / events / actions. ❌
 
-## Attmpts 3. How to deal with unsafe?
+## Attempt 3. How to deal with unsafe?
+
+The preambule of [Universal declaration of human rights](https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights) says:
+
+> Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law...
+
+Unsafe actions is not a problem for a desperate people. For angry and tired people. For people that lost everything.
+
+![](fight_club.jpeg)
+
+It is reason why we do not consider how to deal with unsafe in that way. We assume more typical situation when you have something that you don't want to loose — family, health, money, reputation, etc.
+
+We still can take some risk, but is much more complicated to evaluate whether it is worth the risk.
+My life experience says that for involve really big number of people in something risky we need to reduce risk to near-zero level.
+Inpossible? Yeah, looks like. But this is reality.
+
+Let's try to guess how we can do this.
 
 Coming soon...
 
