@@ -77,12 +77,37 @@ Inpossible? Yeah, looks like. But this is reality.
 
 Let's try to guess how we can do this.
 
-Coming soon...
+### Conditional participation
 
 ![Circular dependencies issue described in Thinking in promises](deadlock.png)
+
+Conditional participation is when you promise to do something when some condition will met. For example: _I promise to help clean the beach if other 49 will promise too_. The idea looks good.
+
+Unfortunately, practice shows that it is extremely easy for people to decide not to participate in anything. I think because there is no penalty or damages for refusing to participate. Also because people don't trust to the system.
+
+### Delegated action. Conditional funding
+
+I can imagine system where unlimited persons can fund some result ("we pay money for task executor if and only if task will be executed").
+A potential "performer" can "take" the task "to work", and if the task is completed, the performer can get payment.
+But I don't know how to validate that task is completeed and completeed sufficiently. How to validate that some event (in «real world») is really happened?
+
+What else? 🤔
+
+## Byzantine generals problem
+
+Perhaps you are tired of reading this text if you already know about the Byzantine generals problem
+
+> We imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching agreement.
+
+![](byzantine_generals_problem.png)
+
+If you try to google this term you will see that almost in all cases BGP considering in blockchain context. In context of computer science.
+
+... Stay tuned. Article in progress. ...
 
 ## References
 
 1. [Coordination, good and bad. Vitalik Buterin](https://vitalik.ca/general/2020/09/11/coordination.html)
 2. [Inadequate Equilibria. Eliezer Yudkowsky](https://equilibriabook.com/molochs-toolbox/)
-3. Thinking in Promises: Designing Systems for Cooperation. Mark Burgess
+3. [Thinking in Promises: Designing Systems for Cooperation. Mark Burgess](https://www.oreilly.com/library/view/thinking-in-promises/9781491917862/ch04.html)
+4. [Thee Byzantine Generals Problem. Leslie Lamport, Robert Shostak, and Marshall Pease](https://lamport.azurewebsites.net/pubs/byz.pdf)
