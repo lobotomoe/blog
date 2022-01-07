@@ -59,17 +59,21 @@ What about unsafe and dangerous events?
 In most cases, attempts to solve really important problems cause conflict with the authorities, corporations, police or criminals.
 We need to continue our attempts and find solution for unsafe initiatives / events / actions. ❌
 
-## Attempt 3. How to deal with unsafe?
+## Attempt 3. How to deal with unsafe actions?
 
 The preambule of [Universal declaration of human rights](https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights) says:
 
-> Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law...
+> Whereas it is essential, if man is not to be compelled to have recourse, as a **last resort**, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law...
+
+Okay. But what is relation between unsafe actions and this quote from UDHR? Answer is highlighed "last resort".
+
+**The rebels have nothing to lose. The rioters are no longer afraid of anything.**
 
 Unsafe actions is not a problem for a desperate people. For angry and tired people. For people that lost everything.
 
 ![](fight_club.jpeg)
 
-It is reason why we do not consider how to deal with unsafe in that way. We assume more typical situation when you have something that you don't want to loose — family, health, money, reputation, etc.
+It is reason why we do not consider how to deal with unsafe actions when you nothing to lose and when you are not afraid. We considering more typical situation when you have something that you don't want to loose — family, health, money, reputation, etc.
 
 We still can take some risk, but is much more complicated to evaluate whether it is worth the risk.
 My life experience says that for involve really big number of people in something risky we need to reduce risk to near-zero level.
@@ -87,19 +91,34 @@ Unfortunately, practice shows that it is extremely easy for people to decide not
 
 ### Delegated action. Conditional funding
 
-I can imagine system where unlimited persons can fund some result ("we pay money for task executor if and only if task will be executed").
-A potential "performer" can "take" the task "to work", and if the task is completed, the performer can get payment.
+In this case we pay money for task executor if and only if task will be completed.
 
-Here we need "event validators", that should decide task is completed and completed sufficiently or not.
-And I don't know how to make it possible.
+Delegated action scenario can be like this.
+
+1. Someone create the task, where describe task, define reward
+2. Unlimited "sponsors" can fund this task
+3. When task's reward amount reached, task can be taken in work by some "executor".
+4. If executor mark task as ready in the game coming "validators".
+5. Validators must confirm that task is really completed and completed sufficiently or not.
+6. If confirmation is received, the executor can collect the reward.
+
+Ok, let me draw it:
+
+![](delegated_action.png)
+
+This flow very simplified, but descibed key concept.
+Problem is how to do validation right way and make it reliable? How to protect sponsors and the executor from fraud?
+Currently I don't know how to make it possible.
 
 ## Byzantine generals problem
 
 Both methods that I described above have a common problem — people can lie, people can do something that doesn't correspond to what they said, declaration of intent may not correspond to actual actions. In general, **people can producing unwanted results (to lie, intentionally or not; failure to fulfill a promise) which are making a group unable to reach an agreement**
 
+That problem known as "Byzantine generals problem".
+
 > We imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching agreement.
 
-Also generals use courier for connunication. Courier can be captured by the enemy, betray, deliver wrong messsage or just lost it. In general, there is no reliable communication channel between the generals.
+Also generals use courier for communication. Courier can be captured by the enemy, betray, deliver wrong messsage or just lost it. In general, there is no reliable communication channel between the generals.
 
 ![](byzantine_generals_problem.png)
 
