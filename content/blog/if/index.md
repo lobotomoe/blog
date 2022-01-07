@@ -14,7 +14,7 @@ My life experience says that "we all" and "everyone" work well without any innov
 
 **Man is weak alone.** It is obviously. For a real solution to global problems, the effort of the one family or one group of people **is not enough**. We need hundreds and thousands of people.
 
-![Apes together strong](apes.gif)
+![Apes together strong](apes.jpg)
 
 But **coordinating is difficult.** Especially the cordination of large groups. For many reasons.
 
@@ -81,7 +81,7 @@ Let's try to guess how we can do this.
 
 ![Circular dependencies issue described in Thinking in promises](deadlock.png)
 
-Conditional participation is when you promise to do something when some condition will met. For example: _I promise to help clean the beach if other 49 will promise too_. The idea looks good.
+Conditional participation is when you promise to do something when some condition will met. For example: _I promise to help clean the beach if other 49 will promise too_. The idea looks good. Here we use [Diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility) and [Bandwagon effect](https://en.wikipedia.org/wiki/Bandwagon_effect) to reduce the likelihood of punishing the participant.
 
 Unfortunately, practice shows that it is extremely easy for people to decide not to participate in anything. I think because there is no penalty or damages for refusing to participate. Also because people don't trust to the system.
 
@@ -89,21 +89,24 @@ Unfortunately, practice shows that it is extremely easy for people to decide not
 
 I can imagine system where unlimited persons can fund some result ("we pay money for task executor if and only if task will be executed").
 A potential "performer" can "take" the task "to work", and if the task is completed, the performer can get payment.
-But I don't know how to validate that task is completeed and completeed sufficiently. How to validate that some event (in «real world») is really happened?
 
-What else? 🤔
+Here we need "event validators", that should decide task is completed and completed sufficiently or not.
+And I don't know how to make it possible.
 
 ## Byzantine generals problem
 
-Perhaps you are tired of reading this text if you already know about the Byzantine generals problem
+Both methods that I described above have a common problem — people can lie, people can do something that doesn't correspond to what they said, declaration of intent may not correspond to actual actions. In general, **people can producing unwanted results (to lie, intentionally or not; failure to fulfill a promise) which are making a group unable to reach an agreement**
 
 > We imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching agreement.
 
+Also generals use courier for connunication. Courier can be captured by the enemy, betray, deliver wrong messsage or just lost it. In general, there is no reliable communication channel between the generals.
+
 ![](byzantine_generals_problem.png)
 
-If you try to google this term you will see that almost in all cases BGP considering in blockchain context. In context of computer science.
+If you try to google this you will see that almost in all cases Byzantine generals problem considering in blockchain context. In context of computer science.
+And all the proposals for a solution are based on the thesis where the general is not a person, but a computer.
 
-... Stay tuned. Article in progress. ...
+In my opinion, this is a big omission. Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "nature-of-the-human". If we can force computers to following the protocol, is there at least one way to make sure that people follow the protocol?
 
 ## References
 

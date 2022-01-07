@@ -35,6 +35,10 @@ type DataProps = {
       title: string;
       date: string;
     }
+    fields: {
+      gitAuthorTime: string;
+      revisionsCount: string;
+    }
   }
 }
 
@@ -42,6 +46,7 @@ type DataProps = {
 const BlogPostTemplate: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { gitAuthorTime, revisionsCount } = data.markdownRemark.fields;
   const { previous, next } = data
 
   return (
@@ -57,7 +62,11 @@ const BlogPostTemplate: React.FC<PageProps<DataProps>> = ({ data, location }) =>
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>
+            Published: {post.frontmatter.date}<br />
+            Last modified: {gitAuthorTime}<br />
+            Revision {revisionsCount}
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -119,6 +128,10 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        gitAuthorTime(formatString: "MMMM DD, YYYY")
+        revisionsCount
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
