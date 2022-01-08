@@ -18,6 +18,8 @@ My life experience says that "we all" and "everyone" work well without any innov
 
 But **coordinating is difficult.** Especially the cordination of large groups. For many reasons.
 
+Eliezer Yudkowsky says:
+
 > VISITOR: Even in my world, Simplicio, coordination isn’t as simple as everyone jumping simultaneously every time one person shouts “Jump!” For coordinated action to be successful, you need to trust the institution that says what the action should be, and a majority of people have to trust that institution, and they have to know that other people trust the institution, so that everyone expects the coordinated action to occur at the critical time, so that it makes sense for them to act too.
 >
 > That’s why we have policy prediction markets and… there doesn’t seem to be a word in your language for the timed-collective-action-threshold-conditional-commitment… hold on, this cultural translator isn’t making any sense. “Kickstarter”? You have the key concept, but you use it mainly for making video games?
@@ -125,7 +127,30 @@ Also generals use courier for communication. Courier can be captured by the enem
 If you try to google this you will see that almost in all cases Byzantine generals problem considering in blockchain context. In context of computer science.
 And all the proposals for a solution are based on the thesis where the general is not a person, but a computer.
 
-In my opinion, this is a big omission. Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "nature-of-the-human". If we can force computers to following the protocol, is there at least one way to make sure that people follow the protocol?
+Ok. We can force computers to following the some protocol. What about humans? We can't convert people to computers (as we know them). Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "nature-of-the-human".
+
+Do you know at least one way to "force" people follow the protocol?
+
+# Nature-of-the-human
+
+What? Nature of the human? Sounds very unscientific!
+
+Of course I mean biological human specification and I'm not talking about the chakras, astral body, aura or something like this.
+
+Douglas Hofstadter says:
+
+> When we humans think, we certainly do change our own mental rules, and we change the rules that change the rules, and on and on-but these are, so to speak, "software rules". However, the rules at bottom do not change. Neurons run in the same simple way the whole time. You can't "think" your neurons into running some nonneural way, although you can make your mind change style or subject of thought. Like Achilles in the Prelude, Ant Fugue, you have access to your thoughts but not to your neurons. Software rules on various levels can change; hardware rules cannot-in fact, to their rigidity is due the software's flexibility! Not a paradox at all, but a fundamental, simple fact about the mechanisms of intelligence.
+
+We should find the way to use our "hardware" for protocol execution. Because our "hardware" works tha same way regardless of our beliefs ("software") — about god exeistance, ideas about what a man or a woman should be like, how to live properly, which programming language is better, which is better ios or android and many other "software" things.
+
+# Summary
+
+- Coordination is diffucult. Much difficult then I can describe in this article.
+- To solve "big problem" not always we need the majority of people.
+- Solution of "big problem" often required big risk.
+- Most people are not ready to take this (big) risk.
+- To reduce risk to near-zero level we must solve Byzantine generals problem.
+- We should find the way to use nature-of-the-human for protocol execution.
 
 ## References
 
@@ -133,3 +158,4 @@ In my opinion, this is a big omission. Even if we imagine that in the future we 
 2. [Inadequate Equilibria. Eliezer Yudkowsky](https://equilibriabook.com/molochs-toolbox/)
 3. [Thinking in Promises: Designing Systems for Cooperation. Mark Burgess](https://www.oreilly.com/library/view/thinking-in-promises/9781491917862/ch04.html)
 4. [Thee Byzantine Generals Problem. Leslie Lamport, Robert Shostak, and Marshall Pease](https://lamport.azurewebsites.net/pubs/byz.pdf)
+5. Gödel, Escher, Bach: An Eternal Golden Braid. Strange Loops, Or Tangled Hierarchies. Douglas R. Hofstadter
