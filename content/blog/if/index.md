@@ -112,7 +112,7 @@ This flow very simplified, but descibed key concept.
 Problem is how to do validation right way and make it reliable? How to protect sponsors and the executor from fraud?
 Currently I don't know how to make it possible.
 
-## Byzantine generals problem
+## Byzantine generals problem (BGP)
 
 Both methods that I described above have a common problem — people can lie, people can do something that doesn't correspond to what they said, declaration of intent may not correspond to actual actions. In general, **people can producing unwanted results (to lie, intentionally or not; failure to fulfill a promise) which are making a group unable to reach an agreement**
 
@@ -124,16 +124,18 @@ Also generals use courier for communication. Courier can be captured by the enem
 
 ![](byzantine_generals_problem.png)
 
-If you try to google this you will see that almost in all cases Byzantine generals problem considering in blockchain context. In context of computer science.
+The problem is how to reach an agreement in such conditions (you can't trust anyone).
+
+If you try to google this you will see that almost in all cases BGP solutions considering in blockchain context. In context of computer science.
 And all the proposals for a solution are based on the thesis where the general is not a person, but a computer.
 
 Ok. We can force computers to following the some protocol. What about humans? We can't convert people to computers (as we know them). Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "nature-of-the-human".
 
 Do you know at least one way to "force" people follow the protocol?
 
-# Nature-of-the-human
+# Human nature
 
-What? Nature of the human? Sounds very unscientific!
+> What? Human nature? I feel unscientific smell!
 
 Of course I mean biological human specification and I'm not talking about the chakras, astral body, aura or something like this.
 
@@ -149,8 +151,8 @@ We should find the way to use our "hardware" for protocol execution. Because our
 - To solve "big problem" not always we need the majority of people.
 - Solution of "big problem" often required big risk.
 - Most people are not ready to take this (big) risk.
-- To reduce risk to near-zero level we must solve Byzantine generals problem.
-- We should find the way to use nature-of-the-human for protocol execution.
+- To reduce risk to near-zero level we must solve Byzantine generals problem (how to reach an agreement without trust).
+- We should find the way to use human nature for protocol execution.
 
 ## References
 
