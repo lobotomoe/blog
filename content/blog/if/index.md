@@ -8,7 +8,7 @@ When someone talk about global problems and how to solve them, I often hear - "i
 
 But I have never heard how it is proposed to implement this "if". How is it proposed to make it so that "we are all" and that "everyone".
 
-My life experience says that "we all" and "everyone" work well without any innovations in small groups — our family, friends, acquaintances. In general, if there is a desire, we can agree to do something together. Because we know each other and we have some level of trust, we are not nobody to each other.
+My life experience says that "we all" and "everyone" work well without any innovations in small groups — our family, friends, acquaintances. In general, if there is a desire, we can agree to do something together. Because we know each other and we have high level of trust, we are not nobody to each other.
 
 ## Problem comes here
 
@@ -16,7 +16,7 @@ My life experience says that "we all" and "everyone" work well without any innov
 
 ![Apes together strong](apes.jpg)
 
-But **coordinating is difficult.** Especially the cordination of large groups. For many reasons.
+But **coordinating is difficult.** Especially the cordination of large group of people unfamiliar with each other. For many reasons.
 
 Eliezer Yudkowsky says:
 
@@ -24,7 +24,7 @@ Eliezer Yudkowsky says:
 >
 > That’s why we have policy prediction markets and… there doesn’t seem to be a word in your language for the timed-collective-action-threshold-conditional-commitment… hold on, this cultural translator isn’t making any sense. “Kickstarter”? You have the key concept, but you use it mainly for making video games?
 
-## Attempt 1. We need to start somewhere.
+## We need to start somewhere.
 
 ![Organize!](organize.jpg)
 
@@ -37,15 +37,16 @@ So let's just take the mentioned coordination requirements (look real, yeah?) an
 
 Finding institutions that want you to do something (like fund them, haha) is easy. There is no problem here. ✅
 
-Assume that we live in a country with 100M population. Majority of people in this case is 50M+ of people.
+Let's check next. "Majority of people". Majority of people where? In the countrly? In the city? In the some community?
+Let's try the country. Assume that we live in a country with 100M population. Majority of people in this case is 50M+ of people.
 Okaaaay, Google. How to create institution known (mind you, not even talking about trust) by 50M+ of people? ❌
 
 P.S. Actually answer is known. See [here](https://en.wikipedia.org/wiki/List_of_most-followed_Twitter_accounts) and [here](https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels) 😄
 
-## Attempt 2. Groups with target number of participants.
+## Groups with target number of participants.
 
 We can't build institution known by majority of people of whole country. At least we can't build it alone (cooperation problem even here!) and in short time.
-It is not our way and we need to think towards to more realistic conditions. Majority of people is not always majority of people of whole country of course.
+We need to think towards to more realistic conditions.
 
 Each coordination has particular purpose. We come together to achieve something. I think in most cases we no need to majority of people to achieve our goal. Just need particular number of cooperation participant.
 
@@ -61,7 +62,7 @@ What about unsafe and dangerous events?
 In most cases, attempts to solve really important problems cause conflict with the authorities, corporations, police or criminals.
 We need to continue our attempts and find solution for unsafe initiatives / events / actions. ❌
 
-## Attempt 3. How to deal with unsafe actions?
+## How to deal with unsafe actions?
 
 The preambule of [Universal declaration of human rights](https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights) says:
 
@@ -89,6 +90,8 @@ Let's try to guess how we can do this.
 
 Conditional participation is when you promise to do something when some condition will met. For example: _I promise to help clean the beach if other 49 will promise too_. The idea looks good. Here we use [Diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility) and [Bandwagon effect](https://en.wikipedia.org/wiki/Bandwagon_effect) to reduce the likelihood of punishing the participant.
 
+![](conditional_actions.png)
+
 Unfortunately, practice shows that it is extremely easy for people to decide not to participate in anything. I think because there is no penalty or damages for refusing to participate. Also because people don't trust to the system.
 
 ### Delegated action. Conditional funding
@@ -109,7 +112,7 @@ Ok, let me draw it:
 ![](delegated_action.png)
 
 This flow very simplified, but descibed key concept.
-Problem is how to do validation right way and make it reliable? How to protect sponsors and the executor from fraud?
+Problem is how to do validation right way and make it reliable. How to protect sponsors and the executor from fraud?
 Currently I don't know how to make it possible.
 
 ## Byzantine generals problem (BGP)
@@ -120,16 +123,16 @@ That problem known as "Byzantine generals problem".
 
 > We imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching agreement.
 
-Also generals use courier for communication. Courier can be captured by the enemy, betray, deliver wrong messsage or just lost it. In general, there is no reliable communication channel between the generals.
+Generals use courier for communication. Courier can be captured by the enemy, betray, deliver wrong messsage or just lost it. In general, there is no reliable communication channel between the generals.
 
 ![](byzantine_generals_problem.png)
 
 The problem is how to reach an agreement in such conditions (you can't trust anyone).
 
 If you try to google this you will see that almost in all cases BGP solutions considering in blockchain context. In context of computer science.
-And all the proposals for a solution are based on the thesis where the general is not a person, but a computer.
+And all the proposals for a solution are based on the thesis where the general is not a human, but a computer.
 
-Ok. We can force computers to following the some protocol. What about humans? We can't convert people to computers (as we know them). Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "nature-of-the-human".
+Ok. We can force computers to following the some protocol (ordered instructions). What about humans? We can't convert people to computers (as we know them). Even if we imagine that in the future we will implant communication chip into our brains, we are still not protected from "human naturee".
 
 Do you know at least one way to "force" people follow the protocol?
 
@@ -152,12 +155,12 @@ We should find the way to use our "hardware" for protocol execution. Because our
 - Solution of "big problem" often required big risk.
 - Most people are not ready to take this (big) risk.
 - To reduce risk to near-zero level we must solve Byzantine generals problem (how to reach an agreement without trust).
-- We should find the way to use human nature for protocol execution.
+- We should find the way to use human nature to make protocol following possible
 
 ## References
 
-1. [Coordination, good and bad. Vitalik Buterin](https://vitalik.ca/general/2020/09/11/coordination.html)
-2. [Inadequate Equilibria. Eliezer Yudkowsky](https://equilibriabook.com/molochs-toolbox/)
-3. [Thinking in Promises: Designing Systems for Cooperation. Mark Burgess](https://www.oreilly.com/library/view/thinking-in-promises/9781491917862/ch04.html)
-4. [Thee Byzantine Generals Problem. Leslie Lamport, Robert Shostak, and Marshall Pease](https://lamport.azurewebsites.net/pubs/byz.pdf)
-5. Gödel, Escher, Bach: An Eternal Golden Braid. Strange Loops, Or Tangled Hierarchies. Douglas R. Hofstadter
+1. [Inadequate Equilibria. Eliezer Yudkowsky](https://equilibriabook.com/molochs-toolbox/)
+2. [Thinking in Promises: Designing Systems for Cooperation. Mark Burgess](https://www.oreilly.com/library/view/thinking-in-promises/9781491917862/ch04.html)
+3. [Thee Byzantine Generals Problem. Leslie Lamport, Robert Shostak, and Marshall Pease](https://lamport.azurewebsites.net/pubs/byz.pdf)
+4. Gödel, Escher, Bach: An Eternal Golden Braid. Strange Loops, Or Tangled Hierarchies. Douglas R. Hofstadter
+5. [Coordination, good and bad. Vitalik Buterin](https://vitalik.ca/general/2020/09/11/coordination.html)
